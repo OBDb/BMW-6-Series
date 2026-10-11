@@ -1,0 +1,12 @@
+references:
+  - "https://en.wikipedia.org/wiki/BMW_6_Series"
+
+generations:
+  - name: "E63/E64"
+    start_year: 2004
+    end_year: 2010
+    description: "The coupe and convertible with six-cylinder and V8 engines."
+  - name: "F06/F12/F13"
+    start_year: 2011
+    end_year: 2018
+    description: "The coupe, convertible and Gran Coupe on the F10 5 Series platform."

@@ -1,0 +1,23 @@
+command_id: 6F1.612.224402|e=12,fc=1
+test_cases:
+- expected_values:
+    SERIES6_EOT_6F1: 70
+  response: 612F105624402008C
+- expected_values:
+    SERIES6_EOT_6F1: 71
+  response: 612F105624402008E
+- expected_values:
+    SERIES6_EOT_6F1: 94
+  response: 612F10562440200BC
+- expected_values:
+    SERIES6_EOT_6F1: 94.5
+  response: 612F10562440200BD
+- expected_values:
+    SERIES6_EOT_6F1: 96
+  response: 612F10562440200C0
+- expected_values:
+    SERIES6_EOT_6F1: 100.5
+  response: 612F10562440200C9
+- expected_values:
+    SERIES6_EOT_6F1: 105
+  response: 612F10562440200D2

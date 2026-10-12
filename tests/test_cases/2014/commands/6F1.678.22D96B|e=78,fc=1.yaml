@@ -9,3 +9,9 @@ test_cases:
 - expected_values:
     SERIES6_IHX_AAT: 19
   response: 678F10562D96B0076
+- expected_values:
+    SERIES6_IHX_AAT: 29.5
+  response: 678F10562D96B008B
+- expected_values:
+    SERIES6_IHX_AAT: 30
+  response: 678F10562D96B008C

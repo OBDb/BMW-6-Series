@@ -244,11 +244,11 @@
   "signals": [
     {"id": "SERIES6_ATF_TEMP", "path": "Engine", "fmt": { "len": 16, "max": 65487, "min": -48, "add": -48, "nullmax": 65487, "unit": "celsius" }, "name": "Automatic transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"}
   ]},
-{ "hdr": "6F1", "rax": "618", "eax": "18", "fcm1": true, "cmd": {"22": "DA1F"}, "freq": 1, "dbgfilter": { "to": 2013, "from": 2015 },
+{ "hdr": "6F1", "rax": "618", "eax": "18", "fcm1": true, "cmd": {"22": "DA1F"}, "freq": 1, "dbgfilter": { "to": 2013, "years": [2015, 2016, 2017] },
   "signals": [
     {"id": "SERIES6_KICKDOWN", "path": "Engine", "fmt": {"bix": 8, "len": 8, "max": 100, "unit": "scalar" }, "name": "Kickdown"}
   ]},
-{ "hdr": "6F1", "rax": "618", "eax": "18", "fcm1": true, "cmd": {"22": "DA22"}, "freq": 1, "dbgfilter": { "to": 2013, "from": 2015 },
+{ "hdr": "6F1", "rax": "618", "eax": "18", "fcm1": true, "cmd": {"22": "DA22"}, "freq": 1, "dbgfilter": { "to": 2013, "years": [2015, 2016, 2017] },
   "signals": [
     {"id": "SERIES6_TQ_CNVRT_LOCKUP", "path": "Transmission", "name": "Torque converter lockup", "fmt": {"bix": 8, "len": 8, "map": {
           "0": { "description": "Open",               "value": "OPEN" },
@@ -260,24 +260,24 @@
         }}
     }
   ]},
-{ "hdr": "6F1", "rax": "618", "eax": "18", "fcm1": true, "cmd": {"22": "DA23"}, "freq": 15, "dbgfilter": { "to": 2013, "from": 2015 },
+{ "hdr": "6F1", "rax": "618", "eax": "18", "fcm1": true, "cmd": {"22": "DA23"}, "freq": 15, "dbgfilter": { "to": 2013, "years": [2015, 2016, 2017] },
   "signals": [
     {"id": "SERIES6_ODO_LOWRES", "path": "Trips", "fmt": { "len": 32, "max": 1000000, "mul": 8, "nullmax": 1000000, "unit": "kilometers" }, "name": "Odometer, low resolution", "suggestedMetric": "odometer"}
   ]},
-{ "hdr": "6F1", "rax": "618", "eax": "18", "fcm1": true, "cmd": {"22": "DA25"}, "freq": 1, "dbgfilter": { "to": 2013, "from": 2015 },
+{ "hdr": "6F1", "rax": "618", "eax": "18", "fcm1": true, "cmd": {"22": "DA25"}, "freq": 1, "dbgfilter": { "to": 2013, "years": [2015, 2016, 2017] },
   "signals": [
     {"id": "SERIES6_EOT", "path": "Engine", "fmt": { "len": 16, "max": 65487, "min": -48, "add": -48, "nullmax": 65487, "unit": "celsius" }, "name": "Engine oil temperature", "suggestedMetric": "engineOilTemperature"}
   ]},
-{ "hdr": "6F1", "rax": "618", "eax": "18", "fcm1": true, "cmd": {"22": "DA28"}, "freq": 1, "dbgfilter": { "to": 2013, "from": 2015 },
+{ "hdr": "6F1", "rax": "618", "eax": "18", "fcm1": true, "cmd": {"22": "DA28"}, "freq": 1, "dbgfilter": { "to": 2013, "years": [2015, 2016, 2017] },
   "signals": [
     {"id": "SERIES6_BRAKE_SWITCH", "path": "Control", "fmt": {"bix": 8, "len": 8, "max": 1, "unit": "scalar" }, "name": "Brake switch"}
   ]},
-{ "hdr": "6F1", "rax": "618", "eax": "18", "fcm1": true, "cmd": {"22": "DA2A"}, "freq": 1, "dbgfilter": { "to": 2013, "from": 2015 },
+{ "hdr": "6F1", "rax": "618", "eax": "18", "fcm1": true, "cmd": {"22": "DA2A"}, "freq": 1, "dbgfilter": { "to": 2013, "years": [2015, 2016, 2017] },
   "signals": [
     {"id": "SERIES6_TQ_CNVRT_RPM",    "path": "Transmission", "fmt": {           "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "rpm" }, "name": "Torque converter speed"},
     {"id": "SERIES6_TRANS_SHAFT_RPM", "path": "Transmission", "fmt": {"bix": 16, "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "rpm" }, "name": "Transmission output shaft speed"}
   ]},
-{ "hdr": "6F1", "rax": "618", "eax": "18", "fcm1": true, "cmd": {"22": "DA2E"}, "freq": 1, "dbgfilter": { "to": 2013, "from": 2015 },
+{ "hdr": "6F1", "rax": "618", "eax": "18", "fcm1": true, "cmd": {"22": "DA2E"}, "freq": 1, "dbgfilter": { "to": 2013, "years": [2015, 2016, 2017] },
   "signals": [
     {"id": "SERIES6_GEAR_SHIFT", "path": "Transmission", "name": "Shift gear", "fmt": {"len": 8, "map": {
           "0": { "description": "Park",    "value": "PARK" },
@@ -328,7 +328,7 @@
     {"id": "SERIES6_EM_TQ",     "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 16383, "min": -16384, "div": 2,               "sign": true, "unit": "newtonMeters" }, "name": "Drive motor torque, actual"},
     {"id": "SERIES6_EM_TQ_TGT", "path": "Engine", "fmt": {"bix": 32, "len": 16, "max": 16383, "min": -16384, "div": 2,               "sign": true, "unit": "newtonMeters" }, "name": "Drive motor torque, requested"}
   ]},
-{ "hdr": "6F1", "rax": "629", "eax": "29", "fcm1": true, "cmd": {"22": "DBE4"}, "freq": 0.25, "dbgfilter": { "to": 2013, "from": 2015 },
+{ "hdr": "6F1", "rax": "629", "eax": "29", "fcm1": true, "cmd": {"22": "DBE4"}, "freq": 0.25, "dbgfilter": { "to": 2013, "years": [2015, 2016, 2017] },
   "signals": [
     {"id": "SERIES6_FL_SPD", "path": "Movement", "fmt": {           "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
     {"id": "SERIES6_FR_SPD", "path": "Movement", "fmt": {"bix": 16, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
@@ -379,7 +379,7 @@
   "signals": [
     {"id": "SERIES6_STEER_TQ", "path": "Engine", "fmt": { "len": 16, "max": 255, "min": -256, "div": 128, "sign": true, "unit": "newtonMeters" }, "name": "Steering torque"}
   ]},
-{ "hdr": "6F1", "rax": "640", "eax": "40", "fcm1": true, "dbg": true, "cmd": {"22": "1700"}, "freq": 1,
+{ "hdr": "6F1", "rax": "640", "eax": "40", "fcm1": true, "cmd": {"22": "1700"}, "freq": 1, "dbgfilter": { "to": 2020 },
   "signals": [
     {"id": "SERIES6_ODO_2", "path": "Trips", "fmt": { "len": 32, "max": 1000000, "unit": "kilometers" }, "name": "Odometer variant", "suggestedMetric": "odometer"}
   ]},

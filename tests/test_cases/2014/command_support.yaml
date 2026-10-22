@@ -52,6 +52,7 @@ supported_commands_by_ecu:
   - 6F1.678.22D96B|e=78,fc=1:SERIES6_IHX_AAT
   "7DF":
   - 7DF.012F
+  - 7DF.0131
   - 7DF.0134
   - 7DF.0143
   - 7DF.0144

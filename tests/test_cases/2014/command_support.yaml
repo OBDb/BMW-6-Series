@@ -51,6 +51,7 @@ supported_commands_by_ecu:
   - 6F1.678.22D931|e=78,fc=1:SERIES6_HVAC_RECIRC
   - 6F1.678.22D96B|e=78,fc=1:SERIES6_IHX_AAT
   "7DF":
+  - 7DF.010C
   - 7DF.012F
   - 7DF.0131
   - 7DF.0134
@@ -181,6 +182,7 @@ unsupported_commands_by_ecu:
   - 7E0.0143:LOAD_ABS
   - 7E0.0144:EQ_RAT
   "7E2":
+  - 7E2.7EA.010C
   - 7E2.7EA.012F
   - 7E2.7EA.0131
   - 7E2.7EA.0134
